@@ -73,41 +73,4 @@ public class Engine implements Runnable {
         }
 
     }
-
-//    // TODO: refactor for problem 4
-//    private String interpredCommand(String[] data, String commandName) throws IllegalAccessException,
-//            ClassNotFoundException, InstantiationException, NoSuchMethodException, InvocationTargetException {
-//        String result;
-//        switch (commandName) {
-//            case "add":
-//                result = this.addUnitCommand(data);
-//                break;
-//            case "report":
-//                result = this.reportCommand(data);
-//                break;
-//            case "fight":
-//                result = this.fightCommand(data);
-//                break;
-//            default:
-//                throw new RuntimeException("Invalid command!");
-//        }
-//        return result;
-//    }
-//
-//    private String reportCommand(String[] data) {
-//        String output = this.repository.getStatistics();
-//        return output;
-//    }
-//
-//    private String addUnitCommand(String[] data) throws IllegalAccessException, InstantiationException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
-//        String unitType = data[1];
-//        Unit unitToAdd = this.unitFactory.createUnit(unitType);
-//        this.repository.addUnit(unitToAdd);
-//        String output = unitType + " added!";
-//        return output;
-//    }
-//
-//    private String fightCommand(String[] data) {
-//        return "fight";
-//    }
 }
